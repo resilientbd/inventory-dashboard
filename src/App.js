@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import inventoryItems from './data/mockData';
+import InventoryTable from './components/InventoryTable';
+import StatsPanel from './components/StatusPanel';
 
 function App() {
+  const [items, setItems] = useState(inventoryItems);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div style={{ padding: '2rem' }}>
+        <h1>Inventory Dashboard</h1>
+        <StatsPanel items={items} />
+        <InventoryTable items={items} />
+      </div>
   );
 }
 
