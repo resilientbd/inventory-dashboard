@@ -27,4 +27,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: resilientbd/inventory-dashboard:0.0.1
+          tags: resilientbd/inventory-dashboard:latest
