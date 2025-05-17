@@ -6,7 +6,7 @@ A simple, interactive inventory dashboard built with **React**, containerized us
 
 ## 📦 Features
 
-- 🖥️ React-based frontend UI (inventory listing and stats)
+- 🖥️ React-based frontend UI (inventory listing and stats / static)
 - 🐳 Dockerfile for production builds with Nginx
 - ⚙️ Docker Compose support
 - 🔁 GitHub Actions for CI/CD

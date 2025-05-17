@@ -8,7 +8,7 @@ function App() {
 
   return (
       <div style={{ padding: '2rem' }}>
-        <h1>Inventory Dashboard</h1>
+        <h1>Inventory Dashboard V: 0.0.2</h1>
         <StatsPanel items={items} />
         <InventoryTable items={items} />
       </div>

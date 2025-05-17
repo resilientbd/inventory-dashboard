@@ -1,10 +1,10 @@
 services:
   frontend:
-    build:
-      context: .
-      dockerfile: dockerfile
+#    build:
+#      context: .
+#      dockerfile: dockerfile
     container_name: inventory_dashboard_frontend
-    image: resilientbd/inventory-dashboard:0.0.1
+    image: resilientbd/inventory-dashboard:latest
     ports:
       - "8080:80"
     restart: always
